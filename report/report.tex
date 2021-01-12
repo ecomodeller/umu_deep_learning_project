@@ -22,6 +22,10 @@ Våghöjd, risk \ldots
 
 \section{Metod}
 
+Dropout är en populär metod för regularising av neurala nätverk. Dropout fungerar genom att ignorera signaler från slumpmässigt utvalda neuroner. Detta gör att modellen inte kan förlita sig på enskilda passager genom nätverket utan tvingas att hitta nya vägar och på så vis generalisera bättre.
+
+Den typiska användingen av Dropout är att det endast är aktiv under träning av modellen och när modellen används för prediktion så är Dropout inte aktivt och modellen predikterar på så vis samma resultat varje gång med samma indata, dvs. en deterministisk modell.
+
 \subsection{Data}
 
 Observationer av våghöjd, riktning och period ~(Fig.~\ref{fig:data-test}) från SMHIs arkiv av öppna data från \citet{smhi}.
